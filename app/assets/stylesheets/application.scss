@@ -34,7 +34,7 @@ a:hover {
 html,
 body {
     height: 100%;
-    background-color: #333;
+    // background-color: #333;
 }
 
 body {
@@ -80,7 +80,7 @@ body {
 
 .masthead {
     margin-bottom: 2rem;
-    background-color: #333;
+    // background-color: #333;
 }
 
 .masthead-brand {
@@ -150,9 +150,10 @@ body {
     .masthead {
         position: fixed;
         top: 0;
-        z-index: 2;
+        z-index: 1;
     }
     .mastfoot {
+        // position: fixed;
         bottom: 0;
     }
     /* Start the vertical centering */
@@ -210,4 +211,23 @@ body {
 .app-nav span {
     margin-right: 15px;
     margin-left: 15px;
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: image-url('home_bg.png') no-repeat;
+    background-size: cover;
+}
+
+.app-footer {
+    color: white;
 }
