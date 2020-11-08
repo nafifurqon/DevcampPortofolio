@@ -1,4 +1,13 @@
 class PortfolioUploader < CarrierWave::Uploader::Base
+  
+  include CarrierWave::MiniMagick
+
+  # CarrierWave.configure do |config|
+  #   config.dropbox_app_key = ENV["DROPBOX_APP_KEY"]
+  #   config.dropbox_app_secret = ENV["DROPBOX_APP_SECRET"]
+  #   config.dropbox_access_type = "dropbox"
+  # end
+  
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
