@@ -6,7 +6,14 @@
 
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab" rel="stylesheet">
+
     <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/binary.ico' %>
+
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -32,9 +39,6 @@
 
       <%= alerts %>
 
-      <%= source_helper("blog") %>
-
-      
     </div>
   </body>
 </html>
