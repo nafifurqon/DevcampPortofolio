@@ -1,5 +1,5 @@
-ready = - >
-    $('[data-toggle="popover"]').popover()
+ready = ->
+    $('[data-toggle="popover"]').popover();
 return
 
 $(document).ready ready
